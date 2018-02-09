@@ -1,13 +1,15 @@
 body {
-    background:#777;
+    background:url("numbers-t2.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center ;
         }
 
   #background {
       width:300px;
       height:400px;
-      background-image:url("Knee.jpg");
+      background-color:#3b3535;
       margin:50px auto;
-      -webkit-animation:bgChange 2s 2s alternate infinite;
       transition: all 2s ease;
   }
   
@@ -36,10 +38,8 @@ body {
       top:10px;
   }
   
-  #result:hover {
-      
+  #result:hover {   
       cursor: text;
-      
   }
   
   #first-rows {
@@ -59,18 +59,16 @@ body {
       margin-left:25px;
       border-radius:4px;
   }
-  
-  /* Aligning the division and dot button properly */
 
   .fall-back {
     margin-left:3px !important;
 }
-  /* Aligning the addition and equals to button properly */
+  
   .align {
       margin-left: 6px !important;
   }
   
-  /* Button styling */
+  
   .btn-style {
       width:50px;
       height:50px;
@@ -93,24 +91,16 @@ body {
   
    .num-bg {
       background:#000;
-      color:#00FF00;
+      color:#fff;
       font-size:26px;
       cursor:pointer;
       outline:none;
       border:3px solid #00FF00;
   }
   
-   .num-bg:active {
-      background:#000;
-      color:#fff;
-      font-size:26px;
-      cursor:pointer;
-      outline:none;
-      box-shadow: inset 5px 5px 5px #555;
-  }
   
-  /*Adding background color to the operator values */ 
-  .opera-bg {
+  
+  .operator-bg {
       background:#333;
       color:#fff;
       font-size:26px;
@@ -119,33 +109,17 @@ body {
       border-bottom:3px solid #555;
   }
   
-  .opera-bg:active {
-      background:#333;
-      color:#fff;
+  
+  .delete-bg {
+      background:#17ff5c;
+      color:#000;
       font-size:26px;
       cursor: pointer;
-      outline:none;
-      box-shadow: inset 4px 4px 4px #555;
+      outline:3px solid black;
+      border-bottom:1px solid #17ff5c;
   }
   
-  /*Adding a background color to the delete button */
-  .del-bg {
-      background:#24b4de;
-      color:#fff;
-      font-size:26px;
-      cursor: pointer;
-      outline:none;
-      border-bottom:3px solid #399cb9;
-  }
-  
-  .del-bg:active {
-      background:#24b4de;
-      color:#fff;
-      font-size:26px;
-      cursor: pointer;
-      outline:none;
-      box-shadow: inset 4px 4px 4px #399cb9;
-  }
+
   
   /*Adding a background color to the equals to button */
   #eqn-bg {
@@ -157,27 +131,7 @@ body {
       border-bottom:3px solid #1f7a29;
   }
   
-  #eqn-bg:active {
-      background:#17a928;
-      color:#fff;
-      font-size:26px;
-      cursor: pointer;
-      outline:none;
-      box-shadow: inset 4px 4px 4px #1f7a29;
-  }
   
-  /* @-webkit-keyframes bgChange {
-      0% {
-         background:#235d6e; 
-      }
-      
-      50% {
-        background:#17a928;
-      }
-      
-      100% {
-          background:#399cb9;
-      
-        }
-    } */
   
+  
+
