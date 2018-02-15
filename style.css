@@ -1,5 +1,5 @@
 body {
-    background:url("numbers-t2.jpg");
+    background:url("rick.jpg");
     background-size:cover;
     background-repeat:no-repeat;
     background-position:center ;
@@ -7,9 +7,10 @@ body {
 
   #background {
       border-radius: 10px;
+      outline: 10px black;
       width:300px;
       height:400px;
-      background-color:black;
+      background-color:rgb(106, 179, 172);
       margin:150px auto;
       transition: all 2s ease;
   }
@@ -45,6 +46,7 @@ body {
   
   #first-rows {
       margin-bottom: 20px;
+      margin-left:57px;
       position: relative;
       top:10px;
   }
@@ -128,6 +130,7 @@ body {
       font-size:20px;
       cursor: pointer;
       outline:1px solid black;
+      border-bottom:3px solid #1f7a29;
   }
   
 
