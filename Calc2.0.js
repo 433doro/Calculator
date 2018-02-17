@@ -9,20 +9,20 @@ function collectDataFromDOM(event) {
 }
 
 
-function dislplayCheck(DOMInputLength,Input)
- {
-  var DOMprePresent = [12]
-   if (DOMInputSize>12)
-   { 
-     for (let i = DOMInputSize [Input.length-12]; i < DOMInputSize.length; i++)
-     {
+// function dislplayCheck(DOMInputLength,Input)
+//  {
+//   var DOMprePresent = [12]
+//    if (DOMInputSize>12)
+//    { 
+//      for (let i = DOMInputSize [Input.length-12]; i < DOMInputSize.length; i++)
+//      {
        
 
 
 
-     }
+//      }
 
-   }
+//    }
 
 
 function checkUserInput(clickInput) {
@@ -47,7 +47,7 @@ function checkUserInput(clickInput) {
     var x = removeWhiteSpaces(expression);
     result = Calculate(checkNegatives(x));
     if (isNaN(result)) {
-      document.querySelector("#result").innerHTML = "Invalid Input";
+      document.querySelector("#result").innerHTML = "Invalid Input¯\\_(ツ)_/¯";
     } else {
       document.querySelector("#result").innerHTML = result;
     }
