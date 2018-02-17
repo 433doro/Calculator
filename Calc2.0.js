@@ -16,13 +16,16 @@ function collectDataFromDOM(event) {
 //    { 
 //      for (let i = DOMInputSize [Input.length-12]; i < DOMInputSize.length; i++)
 //      {
-       
-
-
-
+//         DOMprePresent.push(Input[i])
 //      }
-
-//    }
+   
+//    return DOMprePresent;
+//     }
+//     else 
+//     {
+//     return Input;
+//     }
+// }
 
 
 function checkUserInput(clickInput) {
@@ -38,6 +41,7 @@ function checkUserInput(clickInput) {
     document.querySelector("#result").innerHTML = "0";
   } else if (clickInput !== "=" && checkOnlyTwoOpersINaROW < 2) {
     DOMInput.push(clickInput);
+
     DOMPresentation = DOMInput.join("");
     document.querySelector("#result").innerHTML = DOMPresentation;
     checkOnlyTwoOpersINaROW++;
