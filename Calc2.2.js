@@ -53,6 +53,7 @@ function resetOldCalculationsData(){
   splittedByOperators = [];
   expression = [];
   splittedByOperatorsWithoutSpaces= [];
+  fixedMathExpression = [];
   result = 0 ;
 }
 /**
