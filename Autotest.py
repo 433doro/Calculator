@@ -1,27 +1,29 @@
+import unittest
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-from time import sleep
-from socket import socket
 
- def get_socket():
-     sock = socket()
-     sock.bind(("localhost",1996))
-     sock.listen(3)
-     return sock.accept()[0]
+class SimpleCalcNoNegatives(unittest.TestCase):
 
-	  
-  try:
-	  sock = get_socket()
-      driver = webdriver.Chrome()
-      driver.get("http://localhost/")
-      sock.sendall("webdriver started")
-      WebDriverWait(driver,30).until((EC.presence_of_element_located((By.ID,"-")))).click()
-      sock.sendall("finished clicking")
+    def setUp(self):
+        self.driver = webdriver.Chrome("C:/Users/Dell/Documents/Calculator/chromedriver.exe")
 
-  finally:
-      dirver.close()
-      sock.sendall("My work here is done")
-	  sock.close()
+    def simpleCalculation(self):
+        driver = self.driver
+        driver.get("C:/Users/Dell/Documents/Calculator/index.HTML")
+        
+        WebDriverWait(driver,5).until((EC.presence_of_element_located((By.ID,"9")))).click()
+        WebDriverWait(driver,5).until((EC.presence_of_element_located((By.ID,"-")))).click()
+        WebDriverWait(driver,5).until((EC.presence_of_element_located((By.ID,"2")))).click()
+        WebDriverWait(driver,5).until((EC.presence_of_element_located((By.ID,"eqn-bg")))).click()
+        element = driver.find_element_by_id("result")
+        result = int(element.text)
+        assert  7 not in result
 
+
+    def tearDown(self):
+        self.driver.close()
+
+if __name__ == "__main__":
+    unittest.main()
